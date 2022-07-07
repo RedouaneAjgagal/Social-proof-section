@@ -162,7 +162,7 @@ body{
 }
 @media (max-width:576px){
     .about h1{
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
     .container {
             max-width: 100%;
