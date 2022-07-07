@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('https://redouaneajgagal.github.io/Social-proof-section/images/bg-pattern-top-desktop.svg'), url('https://redouaneajgagal.github.io/bg-pattern-bottom-desktop.svg');
+    background-position: left top, bottom right;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+/* Brand info */
+.top-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+.about{
+    max-width: 90%;
+}
+.about h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.about p{
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+/* rating */
+.rates{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.top-rate, .middle-rate, .bottom-rate{
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.65rem;
+    display: flex;
+    padding: 1.5rem;
+    padding-right: 0;
+    width: 30rem;
+}
+.top-rate{
+    align-self: flex-start;
+}
+.middle-rate{
+    align-self: center;
+}
+.bottom-rate{
+    align-self: flex-end;
+}
+.rates img{
+    margin: 0 .33rem;
+}
+.rates h3{
+    color: #502050;
+    margin-left: 1.3rem;
+}
+/* Reviews */
+.bottom-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.left-review, .middle-review, .right-review{
+    background-color: #502050;
+    border-radius: 0.65rem;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+    padding: 3rem 3rem 0;
+}
+.left-review{
+    margin-top: 1rem;
+}
+.middle-review{
+    margin-top: 2rem;
+}
+.right-review{
+    margin-top: 3rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.profile img{   
+    border-radius: 3rem;
+    width: 15%;
+}
+.profile-user{
+    line-height: 1.3;
+}
+.profile-user h4{
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+}
+.review-description{
+    line-height: 1.8;
+}
+/* Media query */
+@media (max-width: 992px){
+    body{
+        background-image: url('https://redouaneajgagal.github.io/Social-proof-section/images/bg-pattern-top-mobile.svg'), url('https://redouaneajgagal.github.io/bg-pattern-bottom-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: left top, bottom right;
+    }
+    .container{
+        max-width: 80%;
+        padding: 5rem 0;
+    }
+    .top-content{
+        text-align: center;
+        grid-template-columns: none; 
+    }
+    .about {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+    .rates {
+        display: block;
+    }
+    .top-rate,
+    .middle-rate,
+    .bottom-rate {
+        display: block;
+        padding: 1.5rem 0;
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .rates h3{
+        margin-top: 0.75rem;
+        margin-left: 0;
+    }
+    .bottom-content {
+        grid-template-columns: none;
+    }
+    .left-review,
+    .middle-review,
+    .right-review {
+        margin-top: 0;
+        padding: 2rem;
+    }
+}
+@media (max-width:576px){
+    .about h1{
+        font-size: 3.5rem;
+    }
+    .container {
+            max-width: 100%;
+            padding: 5rem 0;
+        }
+}
